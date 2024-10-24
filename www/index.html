@@ -209,6 +209,18 @@
        
         
     }
+
+    function changeBackgroundColor(remaining){
+        let percentage = remaining / period;
+        if (percentage > 0.5){
+            document.body.style.changeBackgroundColor = "skyblue"; // 残り時間が半分以上
+            } else if (percentage > 0.2) {
+            document.body.style.backgroundColor = "yellow"; // 残り時間が半分未満、20%以上
+        }else{
+            document.body.style.backgroundColor = "blue"; // 残り時間が20%未満
+        }
+    }
+
     
  
     // 繰り返し実行する処理
